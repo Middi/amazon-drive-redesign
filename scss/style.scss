@@ -26,7 +26,6 @@ header {
 
 .container {
     width:   1000px;
-    height:    72px;
     padding: 0 20px;
     margin:  0 auto;
     display:   flex;
@@ -45,14 +44,15 @@ header {
 nav {
     display: inline-block;
     margin:        0 50px;
+    ul {
+        list-style-type: none;
+    }
+    li {
+        display: inline-block;
+        padding:       0 16px;
+    }
 }
 
-ul {list-style-type: none}
-
-li {
-    display: inline-block;
-    padding:       0 16px;
-}
 
 .login {
     display: inline-block;
@@ -81,10 +81,39 @@ li {
 =============================================*/
 
 #jumbotron {
-    margin: 72px 0;
-    height:  500px;
+
+    height:  572px;
     width:    100%;
+    display: flex;
+
+    .text-content {
+        width: 50%;
+        align-self: center;
+        padding-bottom: 30px;
+    }
+
+    ul {
+        font-size: 0.7rem;
+        padding-left: 18px;
+    }
+
+    li {
+        padding-bottom: 8px;
+    }
+
+    button {
+        font-size: 0.9rem;
+        color: $white;
+        background-color: $bright-blue;
+        border-radius: 50px;
+        border: none;
+        padding: 16px 54px;
+        margin: 20px 0;
+        display: block;
+    }
+    
 }
+
 
 /*=====  End of Jumbotron  ======*/
 

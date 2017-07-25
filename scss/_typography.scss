@@ -5,23 +5,36 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
 
 *, h1, h2, h3, h4, h5, h6, p, a {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'helvetica neue', sans-serif;
     font-weight: 400;
 }
 
 h1 {
-    font-weight:    300;
-    font-size:     2rem;
+    color:    $white;
+    font-weight: 300;
+    font-size:  3rem;
+    padding-bottom: 1.2rem;
 }
 
 h2 {
-    font-size:   1.4rem;
-    padding-bottom: 4px;
+    font-size: 1.4rem;
+    color:    $orange;
+    font-weight:  400;
+    padding-bottom: 1.4rem;
 }
 
 p {
     font-weight: 300;
 }
+
+small {
+    font-size: 0.8rem;
+    color: $white;
+    opacity: 0.2;
+    padding-bottom: 1.4rem;
+}
+
+span {font-weight: 600}
 
 a {
     color: $white;
@@ -38,4 +51,8 @@ a:hover {
     padding-bottom: 24px;
     font-weight: 600;
     border-bottom: 3px solid $orange;
+}
+
+li {
+    color: $white;
 }

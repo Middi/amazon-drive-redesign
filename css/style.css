@@ -17,9 +17,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 body {
   line-height: 1; }
 
-ol, ul {
-  list-style: none; }
-
 blockquote, q {
   quotes: none; }
 
@@ -52,19 +49,32 @@ input, select {
 =                  Typography                 =
 =============================================*/
 *, h1, h2, h3, h4, h5, h6, p, a {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'helvetica neue', sans-serif;
   font-weight: 400; }
 
 h1 {
+  color: #fcfcfc;
   font-weight: 300;
-  font-size: 2rem; }
+  font-size: 3rem;
+  padding-bottom: 1.2rem; }
 
 h2 {
   font-size: 1.4rem;
-  padding-bottom: 4px; }
+  color: #ffac37;
+  font-weight: 400;
+  padding-bottom: 1.4rem; }
 
 p {
   font-weight: 300; }
+
+small {
+  font-size: 0.8rem;
+  color: #fcfcfc;
+  opacity: 0.2;
+  padding-bottom: 1.4rem; }
+
+span {
+  font-weight: 600; }
 
 a {
   color: #fcfcfc;
@@ -80,6 +90,9 @@ a:hover {
   font-weight: 600;
   border-bottom: 3px solid #ffac37; }
 
+li {
+  color: #fcfcfc; }
+
 /*----------  Styles  ----------*/
 body {
   background-color: #30363f; }
@@ -94,7 +107,6 @@ header {
 
 .container {
   width: 1000px;
-  height: 72px;
   padding: 0 20px;
   margin: 0 auto;
   display: flex;
@@ -110,13 +122,11 @@ header {
 nav {
   display: inline-block;
   margin: 0 50px; }
-
-ul {
-  list-style-type: none; }
-
-li {
-  display: inline-block;
-  padding: 0 16px; }
+  nav ul {
+    list-style-type: none; }
+  nav li {
+    display: inline-block;
+    padding: 0 16px; }
 
 .login {
   display: inline-block;
@@ -138,9 +148,27 @@ li {
 =                  Jumbotron                  =
 =============================================*/
 #jumbotron {
-  margin: 72px 0;
-  height: 500px;
-  width: 100%; }
+  height: 572px;
+  width: 100%;
+  display: flex; }
+  #jumbotron .text-content {
+    width: 50%;
+    align-self: center;
+    padding-bottom: 30px; }
+  #jumbotron ul {
+    font-size: 0.7rem;
+    padding-left: 18px; }
+  #jumbotron li {
+    padding-bottom: 8px; }
+  #jumbotron button {
+    font-size: 0.9rem;
+    color: #fcfcfc;
+    background-color: #4095f6;
+    border-radius: 50px;
+    border: none;
+    padding: 16px 54px;
+    margin: 20px 0;
+    display: block; }
 
 /*=====  End of Jumbotron  ======*/
 /*=============================================
