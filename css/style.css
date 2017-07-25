@@ -84,7 +84,9 @@ a:hover {
 body {
   background-color: #30363f; }
 
-/*----------  Header  ----------*/
+/*=============================================
+=                Header / Nav                 =
+=============================================*/
 header {
   width: 100%;
   height: 72px;
@@ -102,8 +104,8 @@ header {
 .logo {
   flex: 2; }
   .logo img {
-    padding-top: 6px;
-    width: 150px; }
+    width: 150px;
+    padding-top: 6px; }
 
 nav {
   display: inline-block;
@@ -130,3 +132,64 @@ li {
   .signup:hover {
     background-color: #ffac37;
     color: #3b434e; }
+
+/*=====  End of Header / Nav  ======*/
+/*=============================================
+=                  Jumbotron                  =
+=============================================*/
+#jumbotron {
+  margin: 72px 0;
+  height: 500px;
+  width: 100%; }
+
+/*=====  End of Jumbotron  ======*/
+/*=============================================
+=                 Learn More                  =
+=============================================*/
+#learn-more {
+  height: 475px;
+  width: 100%;
+  background-color: #e7e7e7; }
+
+/*=====  End of Learn More  ======*/
+/*=============================================
+=                 App Section                 =
+=============================================*/
+#apps {
+  height: 460px;
+  width: 100%;
+  background-color: gainsboro; }
+
+/*=====  End of App Section  ======*/
+/*=============================================
+=              Download Section               =
+=============================================*/
+#download {
+  height: 490px;
+  width: 100%;
+  background-color: #30363f; }
+
+/*=====  End of Download Section  ======*/
+/*=============================================
+=                Trail Section                =
+=============================================*/
+#trial {
+  height: 214px;
+  width: 100%;
+  background-color: #4095f6; }
+
+/*=====  End of Trail Section  ======*/
+/*=============================================
+=                Footer Section               =
+=============================================*/
+footer {
+  height: 310px;
+  width: 100%;
+  background-color: #3b434e; }
+
+.footer-bottom {
+  height: 54px;
+  width: 100%;
+  background-color: #30363f; }
+
+/*=====  End of Footer Section  ======*/

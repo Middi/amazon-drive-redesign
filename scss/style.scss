@@ -13,19 +13,23 @@
 body {background-color: $dark-blue}
 
 
-/*----------  Header  ----------*/
+
+/*=============================================
+=                Header / Nav                 =
+=============================================*/
+
 header {
-    width: 100%;
+    width:  100%;
     height: 72px;
     background-color: $blue;
 }
 
 .container {
-    width: 1000px;
-    height: 72px;
+    width:   1000px;
+    height:    72px;
     padding: 0 20px;
-    margin: 0 auto;
-    display: flex;
+    margin:  0 auto;
+    display:   flex;
     align-items: center;
     justify-content: space-between;
 }
@@ -33,40 +37,134 @@ header {
 .logo {
     flex: 2;
     img {
+        width:     150px;
         padding-top: 6px;
-        width: 150px;
     }
 }
 
 nav {
     display: inline-block;
-    margin: 0 50px;
+    margin:        0 50px;
 }
 
 ul {list-style-type: none}
 
 li {
     display: inline-block;
-    padding: 0 16px;
+    padding:       0 16px;
 }
 
 .login {
     display: inline-block;
-    font-weight: 700;
-    padding: 16px 22px;
+    font-weight:      700;
+    padding:    16px 22px;
     border-left: 1px solid $dark-blue;
 }
 
 .signup {
     border: 1px solid $orange;
-    border-radius: 24px;
-    padding: 12px 24px;
-    font-weight: 700;
+    border-radius:       24px;
+    padding:        12px 24px;
+    font-weight:          700;
     &:hover {
         background-color: $orange;
-        color: $blue;
+        color:              $blue;
     }
 }
+
+/*=====  End of Header / Nav  ======*/
+
+
+
+/*=============================================
+=                  Jumbotron                  =
+=============================================*/
+
+#jumbotron {
+    margin: 72px 0;
+    height:  500px;
+    width:    100%;
+}
+
+/*=====  End of Jumbotron  ======*/
+
+
+
+/*=============================================
+=                 Learn More                  =
+=============================================*/
+
+#learn-more {
+    height: 475px;
+    width:   100%;
+    background-color: $white-back;
+}
+
+/*=====  End of Learn More  ======*/
+
+
+
+
+/*=============================================
+=                 App Section                 =
+=============================================*/
+
+#apps {
+    height: 460px;
+    width:   100%;
+    background-color: $dark-white;
+}
+
+/*=====  End of App Section  ======*/
+
+
+
+/*=============================================
+=              Download Section               =
+=============================================*/
+
+#download {
+    height: 490px;
+    width:   100%;
+    background-color: $dark-blue;
+}
+
+
+/*=====  End of Download Section  ======*/
+
+
+
+/*=============================================
+=                Trail Section                =
+=============================================*/
+
+#trial {
+    height: 214px;
+    width:   100%;
+    background-color: $bright-blue;
+}
+
+/*=====  End of Trail Section  ======*/
+
+
+
+/*=============================================
+=                Footer Section               =
+=============================================*/
+
+footer {
+    height: 310px;
+    width:   100%;
+    background-color: $blue;
+}
+
+.footer-bottom {
+    height:  54px;
+    width:   100%;
+    background-color: $dark-blue;
+}
+/*=====  End of Footer Section  ======*/
+
 
 
 @import "media-queries";
