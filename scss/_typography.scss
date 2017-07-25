@@ -1,0 +1,41 @@
+/*=============================================
+=                  Typography                 =
+=============================================*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+
+*, h1, h2, h3, h4, h5, h6, p, a {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+h1 {
+    font-weight:    300;
+    font-size:     2rem;
+}
+
+h2 {
+    font-size:   1.4rem;
+    padding-bottom: 4px;
+}
+
+p {
+    font-weight: 300;
+}
+
+a {
+    color: $white;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+a:hover {
+    color: $orange;
+}
+
+.active a {
+    color: $orange;
+    padding-bottom: 24px;
+    font-weight: 600;
+    border-bottom: 3px solid $orange;
+}
