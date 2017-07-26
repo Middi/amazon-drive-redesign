@@ -204,16 +204,15 @@ button {
       background-color: #357cce; }
 
 #hero-image {
-  background-image: url("/images/hero-image.png");
-  background-position: top -75px right 10%;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 698px;
-  content: "";
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain; }
+  background-image: url("../images/hero-image.png");
+  top: -4px;
+  left: 50%;
+  width: 700px;
+  height: 760px;
+  position: absolute;
+  background-position: top left -10px;
+  background-size: 600px;
+  background-repeat: no-repeat; }
 
 /*=====  End of Jumbotron  ======*/
 /*=============================================
@@ -223,7 +222,7 @@ button {
   height: 500px;
   background-color: #eceae7; }
   #learn-more .container {
-    background-image: url("/images/safe.png");
+    background-image: url("../images/safe.png");
     background-position: top 110px right 120px;
     background-size: 300px;
     background-repeat: no-repeat; }
@@ -240,7 +239,7 @@ button {
   height: 470px;
   background-color: #e0e0de; }
   #apps .container {
-    background-image: url("/images/drive.png");
+    background-image: url("../images/drive.png");
     background-position: top 20px left 10px;
     background-size: 440px;
     background-repeat: no-repeat; }
@@ -258,7 +257,7 @@ button {
   height: 490px;
   background-color: #30363f; }
   #download .container {
-    background-image: url("/images/download.png");
+    background-image: url("../images/download.png");
     background-position: top 45px right 120px;
     background-size: 310px;
     background-repeat: no-repeat; }
@@ -304,10 +303,3 @@ footer {
   background-color: #30363f; }
 
 /*=====  End of Footer Section  ======*/
-@media only screen and (max-width: 1200px) {
-  #hero-image {
-    background-position: top -75px right; } }
-
-@media only screen and (max-width: 1100px) {
-  #hero-image {
-    background-position: top -75px right -50px; } }

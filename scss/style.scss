@@ -142,15 +142,23 @@ button {
 }
 
 #hero-image  {
-    background-image: url('/images/hero-image.png');
-    background-position: top -75px right 10%;
+    background-image: url('../images/hero-image.png');
+
+    top: -4px;
+    left: 50%;
+    width: 700px;
+    height: 760px;
+    position: absolute;
+
+    background-position: top left -10px;
+    background-size: 600px;
     background-repeat: no-repeat; 
-    width: 100%;
-    height: 698px;
-    content: "";-webkit-background-size: contain;
-       -moz-background-size: contain;
-         -o-background-size: contain;
-            background-size: contain;
+//     width: 100%;
+//     height: 698px;
+//     content: "";-webkit-background-size: contain;
+//        -moz-background-size: contain;
+//          -o-background-size: contain;
+//             background-size: contain;
 }
 
 
@@ -168,7 +176,7 @@ button {
     background-color: $white-back;
 
     .container {
-        background-image: url('/images/safe.png');
+        background-image: url('../images/safe.png');
         background-position: top 110px right 120px;
         background-size: 300px;
         background-repeat: no-repeat;
@@ -194,7 +202,7 @@ button {
     background-color: $dark-white;
 
     .container {
-        background-image: url('/images/drive.png');
+        background-image: url('../images/drive.png');
         background-position: top 20px left 10px;
         background-size: 440px;
         background-repeat: no-repeat;
@@ -221,7 +229,7 @@ button {
     background-color: $dark-blue;
 
     .container {
-        background-image: url('/images/download.png');
+        background-image: url('../images/download.png');
         background-position: top 45px right 120px;
         background-size: 310px;
         background-repeat: no-repeat;
