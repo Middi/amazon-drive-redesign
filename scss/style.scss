@@ -135,7 +135,7 @@ button {
         background-color: $bright-blue;
 
         &:hover {
-            background-color: desaturate(darken($bright-blue, 20), 30);
+            background-color: desaturate(darken($bright-blue, 10), 40);
         }
     }
 }
