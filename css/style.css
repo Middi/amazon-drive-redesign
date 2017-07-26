@@ -157,6 +157,10 @@ nav {
     color: #3b434e; }
 
 /*=====  End of Header / Nav  ======*/
+section {
+  width: 100%;
+  display: flex; }
+
 .text-content {
   width: 60%;
   align-self: center; }
@@ -180,9 +184,7 @@ button {
 =                  Jumbotron                  =
 =============================================*/
 #jumbotron {
-  height: 572px;
-  width: 100%;
-  display: flex; }
+  height: 572px; }
   #jumbotron ul {
     font-size: 0.8rem;
     padding-left: 18px; }
@@ -200,8 +202,6 @@ button {
 =============================================*/
 #learn-more {
   height: 475px;
-  width: 100%;
-  display: flex;
   background-color: #eceae7; }
   #learn-more p {
     padding-right: 170px; }
@@ -212,8 +212,6 @@ button {
 =============================================*/
 #apps {
   height: 460px;
-  width: 100%;
-  display: flex;
   background-color: #e0e0de; }
   #apps .text-right {
     display: flex;
@@ -227,8 +225,6 @@ button {
 =============================================*/
 #download {
   height: 490px;
-  width: 100%;
-  display: flex;
   background-color: #30363f; }
   #download .text-content {
     width: 50%; }
@@ -247,8 +243,6 @@ button {
 =============================================*/
 #trial {
   height: 214px;
-  width: 100%;
-  display: flex;
   background-color: #4095f6; }
   #trial .text-content {
     width: 70%; }
