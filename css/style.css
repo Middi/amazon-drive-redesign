@@ -112,8 +112,7 @@ body {
 header {
   width: 100%;
   height: 72px;
-  background-color: #3b434e;
-  z-index: 20; }
+  background-color: #3b434e; }
 
 .container {
   width: 1000px;
@@ -135,8 +134,7 @@ header {
 
 nav {
   display: inline-block;
-  margin: 0 50px;
-  z-index: 20; }
+  margin: 0 50px; }
   nav ul {
     list-style-type: none; }
   nav li {
@@ -154,13 +152,15 @@ nav {
   border-radius: 24px;
   padding: 12px 24px;
   font-weight: 700;
-  transition: all 0.6s;
-  z-index: 20; }
+  transition: all 0.6s; }
   .signup:hover {
     background-color: #ffac37;
     color: #3b434e; }
 
 /*=====  End of Header / Nav  ======*/
+/*=============================================
+=           Sections Shared Styles            =
+=============================================*/
 section {
   width: 100%;
   display: flex; }
@@ -178,24 +178,18 @@ button {
   font-size: 0.8rem;
   border-radius: 50px;
   padding: 16px 52px;
-  transition: all 0.6s;
+  transition: all 0.4s;
   border: 2px solid #30363f; }
   button:hover {
     color: #eceae7;
     background-color: #30363f; }
 
+/*=====  End of Sections Shared Styles  ======*/
 /*=============================================
 =                  Jumbotron                  =
 =============================================*/
 #jumbotron {
   height: 520px; }
-  #jumbotron .container {
-    width: 1000px;
-    height: auto;
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: 80px auto; }
   #jumbotron ul {
     font-size: 0.8rem;
     padding-left: 18px; }
@@ -205,37 +199,37 @@ button {
     color: #fcfcfc;
     background-color: #4095f6; }
     #jumbotron button:hover {
-      background-color: #357cce; }
+      background-color: #2964a7; }
 
 #hero-image {
-  background-image: url("../images/hero-image.png");
   top: 72px;
   left: 49%;
   width: 700px;
   height: 650px;
   position: absolute;
-  background-position: top left -10px;
+  background-image: url("../images/hero-image.png");
+  background-repeat: no-repeat;
   background-size: 600px;
-  background-repeat: no-repeat; }
+  background-position: top left -10px; }
 
 /*=====  End of Jumbotron  ======*/
 /*=============================================
-=                 Learn More                  =
+=               Secure Section                =
 =============================================*/
-#learn-more {
+#secure {
   height: 500px;
   background-color: #eceae7; }
-  #learn-more .container {
+  #secure .container {
     background-image: url("../images/safe.png");
     background-position: top 110px right 120px;
-    background-size: 300px;
-    background-repeat: no-repeat; }
-  #learn-more .text-content {
+    background-repeat: no-repeat;
+    background-size: 300px; }
+  #secure .text-content {
     width: 60%; }
-  #learn-more p {
+  #secure p {
     padding-right: 170px; }
 
-/*=====  End of Learn More  ======*/
+/*=====  End of Secure Section  ======*/
 /*=============================================
 =                 App Section                 =
 =============================================*/
@@ -245,8 +239,8 @@ button {
   #apps .container {
     background-image: url("../images/drive.png");
     background-position: top 20px left 10px;
-    background-size: 440px;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    background-size: 440px; }
   #apps .text-right {
     display: flex;
     justify-content: flex-end; }
@@ -263,8 +257,8 @@ button {
   #download .container {
     background-image: url("../images/download.png");
     background-position: top 45px right 120px;
-    background-size: 310px;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    background-size: 310px; }
   #download .text-content {
     width: 50%; }
   #download p {
@@ -303,7 +297,7 @@ footer {
   background-color: #3b434e; }
 
 .footer-bottom {
-  height: 54px;
+  height: 40px;
   width: 100%;
   background-color: #30363f; }
 

@@ -20,7 +20,6 @@ header {
     width:  100%;
     height: 72px;
     background-color: $blue;
-    z-index: 20;
 }
 
 .container {
@@ -48,10 +47,9 @@ header {
 nav {
     display: inline-block;
     margin:        0 50px;
-    z-index: 20;
-    ul {
-        list-style-type: none;
-    }
+
+    ul {list-style-type: none}
+
     li {
         display: inline-block;
         padding:       0 16px;
@@ -72,7 +70,6 @@ nav {
     padding:        12px 24px;
     font-weight:          700;
     transition:      all 0.6s;
-    z-index: 20;
 
     &:hover {
         background-color: $orange;
@@ -81,6 +78,11 @@ nav {
 }
 
 /*=====  End of Header / Nav  ======*/
+
+
+/*=============================================
+=           Sections Shared Styles            =
+=============================================*/
 
 section {
     width:   100%;
@@ -101,7 +103,7 @@ button {
     font-size:    0.8rem;
     border-radius:  50px;
     padding:   16px 52px;
-    transition: all 0.6s;
+    transition: all 0.4s;
     border: 2px solid $dark-blue;
 
     &:hover {
@@ -110,23 +112,16 @@ button {
     }
 }
 
+/*=====  End of Sections Shared Styles  ======*/
+
+
 
 /*=============================================
 =                  Jumbotron                  =
 =============================================*/
 
 #jumbotron {
-
     height: 520px;
-
-    .container {
-        width: 1000px;
-        height: auto;
-        position:absolute;
-        left: 0;
-        right: 0;
-        margin: 80px auto;
-    }
 
     ul {
         font-size:  0.8rem;
@@ -140,54 +135,48 @@ button {
         background-color: $bright-blue;
 
         &:hover {
-            background-color: desaturate(darken($bright-blue, 10), 30);
+            background-color: desaturate(darken($bright-blue, 20), 30);
         }
     }
 }
 
 #hero-image  {
-    background-image: url('../images/hero-image.png');
-
-    top: 72px;
-    left: 49%;
-    width: 700px;
+    top:     72px;
+    left:     49%;
+    width:  700px;
     height: 650px;
     position: absolute;
-
-    background-position: top left -10px;
-    background-size: 600px;
+    background-image: url('../images/hero-image.png');
     background-repeat: no-repeat; 
+    background-size:       600px;
+    background-position: top left -10px;
 }
-
-
 
 /*=====  End of Jumbotron  ======*/
 
 
 
 /*=============================================
-=                 Learn More                  =
+=               Secure Section                =
 =============================================*/
 
-#learn-more {
+#secure {
     height: 500px;
     background-color: $white-back;
 
     .container {
         background-image: url('../images/safe.png');
-        background-position: top 110px right 120px;
-        background-size: 300px;
+        background-position:  top 110px right 120px;
         background-repeat: no-repeat;
+        background-size:       300px;
     }
 
-    .text-content {
-    width: 60%;
-}
+    .text-content {width: 60%}
 
     p {padding-right: 170px}
 }
 
-/*=====  End of Learn More  ======*/
+/*=====  End of Secure Section  ======*/
 
 
 
@@ -201,9 +190,9 @@ button {
 
     .container {
         background-image: url('../images/drive.png');
-        background-position: top 20px left 10px;
-        background-size: 440px;
+        background-position:      top 20px left 10px;
         background-repeat: no-repeat;
+        background-size:       440px;
     }
 
     .text-right {
@@ -228,9 +217,9 @@ button {
 
     .container {
         background-image: url('../images/download.png');
-        background-position: top 45px right 120px;
-        background-size: 310px;
+        background-position:       top 45px right 120px;
         background-repeat: no-repeat;
+        background-size:       310px;
     }
 
     .text-content {width: 50%}
@@ -247,7 +236,6 @@ button {
     }
     }
 }
-
 
 /*=====  End of Download Section  ======*/
 
@@ -284,16 +272,17 @@ button {
 
 footer {
     padding: 50px 0;
-    height: 310px;
-    width:   100%;
+    height:   310px;
+    width:     100%;
     background-color: $blue;
 }
 
 .footer-bottom {
-    height:  54px;
+    height:  40px;
     width:   100%;
     background-color: $dark-blue;
 }
+
 /*=====  End of Footer Section  ======*/
 
 
