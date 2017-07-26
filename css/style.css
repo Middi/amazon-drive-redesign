@@ -72,7 +72,7 @@ p {
   font-size: 0.8rem;
   font-weight: 300;
   line-height: 1.5;
-  padding: 20px 170px 10px 0; }
+  padding: 10px 70px 10px 0; }
 
 small {
   font-size: 0.8rem;
@@ -195,6 +195,8 @@ button {
   width: 100%;
   display: flex;
   background-color: #eceae7; }
+  #learn-more p {
+    padding-right: 170px; }
   #learn-more button {
     color: #30363f;
     background: none;
@@ -210,7 +212,20 @@ button {
 #apps {
   height: 460px;
   width: 100%;
+  display: flex;
   background-color: gainsboro; }
+  #apps .text-right {
+    display: flex;
+    justify-content: flex-end; }
+  #apps .text-content {
+    width: 50%; }
+  #apps button {
+    color: #30363f;
+    background: none;
+    border: 2px solid #30363f; }
+    #apps button:hover {
+      color: #eceae7;
+      background-color: #30363f; }
 
 /*=====  End of App Section  ======*/
 /*=============================================

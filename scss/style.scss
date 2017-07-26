@@ -134,6 +134,10 @@ button {
     width:   100%;
     display: flex;
     background-color: $white-back;
+
+    p {
+        padding-right: 170px;
+    }
     
     button {
         color: $dark-blue;
@@ -159,7 +163,29 @@ button {
 #apps {
     height: 460px;
     width:   100%;
+    display: flex;
     background-color: $dark-white;
+
+    .text-right {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .text-content {
+        width: 50%;
+    }
+
+    button {
+        color: $dark-blue;
+        background:  none;
+        border: 2px solid $dark-blue;
+
+        &:hover {
+            color: $white-back;
+            background-color: $dark-blue;
+        }
+    }
+
 }
 
 /*=====  End of App Section  ======*/
