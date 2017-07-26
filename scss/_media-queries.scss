@@ -1,4 +1,15 @@
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1200px) {
 
+    #hero-image  {
+        background-position: top -75px right;
+    }
+
+}
+
+@media only screen and (max-width: 1100px) {
+
+    #hero-image  {
+        background-position: top -75px right -50px;
+    }
 
 }
