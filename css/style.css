@@ -48,7 +48,7 @@ input, select {
 /*=============================================
 =                  Typography                 =
 =============================================*/
-*, h1, h2, h3, h4, h5, h6, p, a {
+*, h1, h2, h3, h4, h5, h6, p, a, small {
   font-family: 'helvetica neue', sans-serif;
   font-weight: 400; }
 
@@ -125,12 +125,11 @@ header {
 .container-nav {
   height: 72px;
   z-index: 20; }
-
-.logo {
-  flex: 2; }
-  .logo img {
-    width: 150px;
-    padding-top: 6px; }
+  .container-nav .logo {
+    flex: 2; }
+    .container-nav .logo img {
+      width: 150px;
+      padding-top: 6px; }
 
 nav {
   display: inline-block;
@@ -292,13 +291,46 @@ button {
 =============================================*/
 footer {
   padding: 50px 0;
-  height: 310px;
+  height: 280px;
   width: 100%;
-  background-color: #3b434e; }
+  background-color: #3b434e;
+  font-weight: 400; }
+  footer ul {
+    list-style-type: none; }
+  footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; }
+  footer .logo img {
+    width: 150px;
+    padding-top: 6px; }
+  footer .footer-left {
+    padding: 6px 100px;
+    opacity: 0.8;
+    flex: 1; }
+    footer .footer-left li {
+      padding: 6px 0; }
+      footer .footer-left li a {
+        font-size: 1rem; }
+  footer .footer-right {
+    font-size: 0.8rem;
+    display: flex; }
+    footer .footer-right .right-1, footer .footer-right .right-2 {
+      padding: 0 0 0 72px; }
+      footer .footer-right .right-1 li, footer .footer-right .right-2 li {
+        padding: 6px 0; }
 
-.footer-bottom {
+.copyright {
   height: 40px;
   width: 100%;
   background-color: #30363f; }
+  .copyright ul {
+    list-style-type: none; }
+  .copyright li {
+    display: inline-block;
+    padding: 0 12px; }
+    .copyright li a {
+      font-size: 0.7rem;
+      opacity: 0.6; }
 
 /*=====  End of Footer Section  ======*/
