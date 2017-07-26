@@ -80,7 +80,7 @@ p {
 small {
   font-size: 0.8rem;
   color: #fcfcfc;
-  opacity: 0.2;
+  opacity: 0.3;
   padding-bottom: 1.4rem; }
 
 span {
@@ -228,8 +228,8 @@ button {
 #download {
   height: 490px;
   width: 100%;
-  background-color: #30363f;
-  display: flex; }
+  display: flex;
+  background-color: #30363f; }
   #download .text-content {
     width: 50%; }
   #download p {
@@ -248,7 +248,16 @@ button {
 #trial {
   height: 214px;
   width: 100%;
+  display: flex;
   background-color: #4095f6; }
+  #trial .text-content {
+    width: 70%; }
+  #trial button {
+    color: #fcfcfc;
+    border: 2px solid #fcfcfc; }
+    #trial button:hover {
+      color: #4095f6;
+      background-color: #fcfcfc; }
 
 /*=====  End of Trail Section  ======*/
 /*=============================================
