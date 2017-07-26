@@ -83,7 +83,7 @@ section {
 }
 
 .text-content {
-    width:         60%;
+    width:         50%;
     align-self: center;
 }
 
@@ -112,7 +112,17 @@ button {
 
 #jumbotron {
 
-    height: 572px;
+    height: 520px;
+
+    .container {
+        width: 1000px;
+        height: auto;
+        position:absolute;
+        left: 0;
+        right: 0;
+        margin: 80px auto;
+    }
+
 
     ul {
         font-size:  0.8rem;
@@ -131,6 +141,20 @@ button {
     }
 }
 
+#hero-image  {
+    background-image: url('/images/hero-image.png');
+    background-position: top -75px right 10%;
+    background-repeat: no-repeat; 
+    width: 100%;
+    height: 698px;
+    content: "";-webkit-background-size: contain;
+       -moz-background-size: contain;
+         -o-background-size: contain;
+            background-size: contain;
+}
+
+
+
 /*=====  End of Jumbotron  ======*/
 
 
@@ -140,8 +164,19 @@ button {
 =============================================*/
 
 #learn-more {
-    height: 475px;
+    height: 500px;
     background-color: $white-back;
+
+    .container {
+        background-image: url('/images/safe.png');
+        background-position: top 110px right 120px;
+        background-size: 300px;
+        background-repeat: no-repeat;
+    }
+
+    .text-content {
+    width: 60%;
+}
 
     p {padding-right: 170px}
 }
@@ -155,8 +190,15 @@ button {
 =============================================*/
 
 #apps {
-    height: 460px;
+    height: 470px;
     background-color: $dark-white;
+
+    .container {
+        background-image: url('/images/drive.png');
+        background-position: top 20px left 10px;
+        background-size: 440px;
+        background-repeat: no-repeat;
+    }
 
     .text-right {
         display: flex;
@@ -177,6 +219,13 @@ button {
 #download {
     height: 490px;
     background-color: $dark-blue;
+
+    .container {
+        background-image: url('/images/download.png');
+        background-position: top 45px right 120px;
+        background-size: 310px;
+        background-repeat: no-repeat;
+    }
 
     .text-content {width: 50%}
 

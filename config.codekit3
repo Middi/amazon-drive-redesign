@@ -19,11 +19,55 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"\/images\/download.png": {
+		"ft": 32768,
+		"iS": 68345,
+		"oA": 0,
+		"oAP": "\/images\/download.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/images\/drive.png": {
+		"ft": 32768,
+		"iS": 89066,
+		"oA": 0,
+		"oAP": "\/images\/drive.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/images\/hero-image.png": {
+		"ft": 32768,
+		"iS": 195719,
+		"oA": 0,
+		"oAP": "\/images\/hero-image.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"\/images\/logo.png": {
 		"ft": 32768,
 		"iS": 39285,
 		"oA": 0,
 		"oAP": "\/images\/logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/images\/safe.png": {
+		"ft": 32768,
+		"iS": 55792,
+		"oA": 0,
+		"oAP": "\/images\/safe.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
