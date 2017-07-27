@@ -1,4 +1,34 @@
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1224px) {
 
+    #hero-image  {background-size: cover}
+}
+
+
+
+@media only screen and (max-width: 880px) {
+    
+    nav, .user {display: none}
+
+    h1 {
+        font-size:    2.7rem;
+        line-height:    3rem;
+        padding-bottom: 1rem;
+    }
+
+    #hero-image  {display: none}
+
+    #jumbotron, #secure, #apps, #download {
+        .container {background-image: none}
+        .text-content {width: 100%}
+    }
+
+    #trial {
+        text-align: center;
+        .container{
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .text-content {width: 100%}
+    }
 
 }

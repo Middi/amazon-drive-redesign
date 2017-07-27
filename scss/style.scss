@@ -23,8 +23,8 @@ header {
 }
 
 .container {
-    width:   1000px;
-    padding: 0 20px;
+    width:   1080px;
+    padding: 0 30px;
     margin:  0 auto;
     display:   flex;
     align-items: center;
@@ -33,10 +33,15 @@ header {
 
 .container-nav {
     height: 72px;
-    z-index: 20;
+    padding: 0 30px;
+    margin:  0 auto;
+    display:   flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1080px;
 
     .logo {
-        flex: 2;
+        flex-grow: 2;
         img {
             width:     150px;
             padding-top: 6px;
@@ -47,6 +52,7 @@ header {
 nav {
     display: inline-block;
     margin:        0 14px;
+    flex-shrink: 2;
 
     ul {list-style-type: none}
 
@@ -95,7 +101,7 @@ section {
 }
 
 button {
-    margin:    20px 0;
+    margin: 0;
     display:    block;
     font-weight:  500;
     color: $dark-blue;
@@ -122,10 +128,14 @@ button {
 
 #jumbotron {
     height: 520px;
+    .container {
+        // width:   1280px;
+        // padding: 0 0 0 130px;
+    }
 
     ul {
         font-size:  0.8rem;
-        padding-left: 18px;
+        padding: 18px;
     }
 
     li {padding-bottom: 8px}
@@ -140,16 +150,17 @@ button {
     }
 }
 
+
 #hero-image  {
     top:     72px;
     left:     49%;
-    width:  700px;
-    height: 650px;
+    width:  50%;
+    height: 600px;
     position: absolute;
     background-image: url('../images/hero-image.png');
     background-repeat: no-repeat; 
-    background-size:       600px;
-    background-position: top left -10px;
+    background-size:      contain;
+    background-position: top left 10%;
 }
 
 /*=====  End of Jumbotron  ======*/
@@ -161,14 +172,15 @@ button {
 =============================================*/
 
 #secure {
-    height: 500px;
+    height: auto;
     background-color: $white-back;
 
     .container {
+        padding: 100px 30px;
         background-image: url('../images/safe.png');
-        background-position:  top 110px right 120px;
+        background-position:  top 110px right 100px;
         background-repeat: no-repeat;
-        background-size:       300px;
+        background-size:       320px;
     }
 
     .text-content {width: 60%}
@@ -185,12 +197,13 @@ button {
 =============================================*/
 
 #apps {
-    height: 470px;
+    height: auto;
     background-color: $dark-white;
 
     .container {
+        padding: 100px 30px;
         background-image: url('../images/drive.png');
-        background-position:      top 20px left 10px;
+        background-position:      top 40px left 10px;
         background-repeat: no-repeat;
         background-size:       440px;
     }
@@ -212,12 +225,13 @@ button {
 =============================================*/
 
 #download {
-    height: 490px;
+    height: auto;
     background-color: $dark-blue;
 
     .container {
+        padding: 100px 30px;
         background-image: url('../images/download.png');
-        background-position:       top 45px right 120px;
+        background-position:       top 50px right 120px;
         background-repeat: no-repeat;
         background-size:       310px;
     }
@@ -230,10 +244,10 @@ button {
         color: $white;
         border: 2px solid $white;
 
-    &:hover {
-        color:        $dark-blue;
-        background-color: $white;
-    }
+        &:hover {
+            color:        $dark-blue;
+            background-color: $white;
+        }
     }
 }
 
@@ -246,7 +260,8 @@ button {
 =============================================*/
 
 #trial {
-    height: 214px;
+    height: auto;
+    padding: 60px 0;
     background-color: $bright-blue;
 
     .text-content {width: 70%}
@@ -260,6 +275,7 @@ button {
             background-color: $white;
         }
     }
+
 }
 
 /*=====  End of Trail Section  ======*/
@@ -279,7 +295,10 @@ footer {
 
     ul {list-style-type: none}
 
-    .container {
+    .container-footer { 
+        padding: 0 30px;
+        max-width: 1080px;
+        margin: 0 auto;
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
