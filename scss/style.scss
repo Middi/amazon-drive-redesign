@@ -188,11 +188,8 @@ button {
 =============================================*/
 
 #jumbotron {
-    height: 520px;
-    .container {
-        // width:   1280px;
-        // padding: 0 0 0 130px;
-    }
+    height: auto;
+    padding: 80px 0;
 
     ul {
         font-size:  0.8rem;
@@ -237,7 +234,7 @@ button {
     background-color: $white-back;
 
     .container {
-        padding: 100px 30px;
+        padding: 100px 30px 80px;
         background-image: url('../images/safe.png');
         background-position:  top 110px right 40px;
         background-repeat: no-repeat;
@@ -262,7 +259,7 @@ button {
     background-color: $dark-white;
 
     .container {
-        padding: 100px 30px;
+        padding: 80px 30px;
         background-image: url('../images/drive.png');
         background-position:      top 40px left -20px;
         background-repeat: no-repeat;

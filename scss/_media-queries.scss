@@ -1,9 +1,13 @@
+
+/*----------  Break Point 1 - 1224px  ----------*/
+
 @media only screen and (max-width: 1224px) {
 
     #hero-image  {background-size: cover}
 }
 
 
+/*----------  Break Point 2 - 880px  ----------*/
 
 @media only screen and (max-width: 880px) {
     
@@ -19,7 +23,7 @@
 
     #hero-image  {display: none}
 
-    #jumbotron, #secure, #apps, #download {
+    #jumbotron, #secure, #apps, #download { 
         .container {background-image: none}
         .text-content {width: 100%}
     }
@@ -28,11 +32,11 @@
     
     #trial {
         text-align: center;
+        .text-content {width: 100%}
         .container{
-            flex-wrap: wrap;
+            flex-wrap:         wrap;
             justify-content: center;
         }
-        .text-content {width: 100%}
     }
 
     .container-footer {flex-direction: column}
@@ -49,10 +53,48 @@
     .footer-right > .right-1, .right-2 {display: none}
     
     .copyright .container {
-        display: block;
-        margin: 0 auto;
+        display:     block;
+        margin:     0 auto;
         text-align: center;
     }
+}
 
+
+/*----------  Break Point 3 - 600px  ----------*/
+
+@media only screen and (max-width: 600px) {
+
+    h2 {
+        font-size: 1rem;
+        padding: 0 90px 10px 0;
+    }
+
+    #jumbotron {
+        padding: 40px 0 60px 0;
+        background-image: url('../images/safe.png');
+        background-position: top 100px right -160px;
+        background-repeat: no-repeat; 
+        background-size:       330px;
+        ul {padding: 18px 135px 10px 18px}
+        button {margin: 30px auto}
+    }
+
+    #secure, #download {
+        text-align: center;
+        .container {padding: 40px 30px}
+        .text-content {width: 100%}
+        p {padding-right: 0px}
+        button {margin: 30px auto}
+    }
+
+    #apps {
+        background-image: url('../images/download.png');
+        background-position:     top 140px right -130px;
+        background-repeat: no-repeat; 
+        background-size:       280px;
+        .container {padding: 40px 30px}
+        .text-content p {padding-right: 120px}
+        button {margin: 70px auto 30px}
+    }
 
 }

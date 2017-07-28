@@ -250,7 +250,8 @@ button {
 =                  Jumbotron                  =
 =============================================*/
 #jumbotron {
-  height: 520px; }
+  height: auto;
+  padding: 80px 0; }
   #jumbotron ul {
     font-size: 0.8rem;
     padding: 18px; }
@@ -281,7 +282,7 @@ button {
   height: auto;
   background-color: #eceae7; }
   #secure .container {
-    padding: 100px 30px;
+    padding: 100px 30px 80px;
     background-image: url("../images/safe.png");
     background-position: top 110px right 40px;
     background-repeat: no-repeat;
@@ -299,7 +300,7 @@ button {
   height: auto;
   background-color: #e0e0de; }
   #apps .container {
-    padding: 100px 30px;
+    padding: 80px 30px;
     background-image: url("../images/drive.png");
     background-position: top 40px left -20px;
     background-repeat: no-repeat;
@@ -408,10 +409,12 @@ footer {
       opacity: 0.6; }
 
 /*=====  End of Footer Section  ======*/
+/*----------  Break Point 1 - 1224px  ----------*/
 @media only screen and (max-width: 1224px) {
   #hero-image {
     background-size: cover; } }
 
+/*----------  Break Point 2 - 880px  ----------*/
 @media only screen and (max-width: 880px) {
   nav, .user {
     display: none; }
@@ -431,11 +434,11 @@ footer {
     padding-right: 40px; }
   #trial {
     text-align: center; }
+    #trial .text-content {
+      width: 100%; }
     #trial .container {
       flex-wrap: wrap;
       justify-content: center; }
-    #trial .text-content {
-      width: 100%; }
   .container-footer {
     flex-direction: column; }
   .footer-left ul {
@@ -451,3 +454,40 @@ footer {
     display: block;
     margin: 0 auto;
     text-align: center; } }
+
+/*----------  Break Point 3 - 600px  ----------*/
+@media only screen and (max-width: 600px) {
+  h2 {
+    font-size: 1rem;
+    padding: 0 90px 10px 0; }
+  #jumbotron {
+    padding: 40px 0 60px 0;
+    background-image: url("../images/safe.png");
+    background-position: top 100px right -160px;
+    background-repeat: no-repeat;
+    background-size: 330px; }
+    #jumbotron ul {
+      padding: 18px 135px 10px 18px; }
+    #jumbotron button {
+      margin: 30px auto; }
+  #secure, #download {
+    text-align: center; }
+    #secure .container, #download .container {
+      padding: 40px 30px; }
+    #secure .text-content, #download .text-content {
+      width: 100%; }
+    #secure p, #download p {
+      padding-right: 0px; }
+    #secure button, #download button {
+      margin: 30px auto; }
+  #apps {
+    background-image: url("../images/download.png");
+    background-position: top 140px right -130px;
+    background-repeat: no-repeat;
+    background-size: 280px; }
+    #apps .container {
+      padding: 40px 30px; }
+    #apps .text-content p {
+      padding-right: 120px; }
+    #apps button {
+      margin: 70px auto 30px; } }
