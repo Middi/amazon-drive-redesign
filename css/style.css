@@ -163,7 +163,6 @@ nav {
     background-color: #ffac37; }
 
 #menu {
-  display: none;
   height: auto;
   padding: 40px 0 80px;
   width: 100%;
@@ -185,6 +184,9 @@ nav {
       font-size: 1rem;
       margin: 0; }
 
+.hidden {
+  display: none; }
+
 #nav-toggle {
   display: none; }
 
@@ -204,6 +206,10 @@ nav {
   position: absolute;
   display: block;
   content: ''; }
+  #nav-toggle span:active,
+  #nav-toggle span:before:active,
+  #nav-toggle span:after:active {
+    background: #fcfcfc; }
 
 #nav-toggle span:before {
   top: -10px; }
@@ -410,8 +416,6 @@ footer {
   nav, .user {
     display: none; }
   #nav-toggle {
-    display: block; }
-  #menu {
     display: block; }
   h1 {
     font-size: 2.7rem;

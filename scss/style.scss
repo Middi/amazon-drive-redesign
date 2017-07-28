@@ -85,7 +85,6 @@ nav {
 }
 
 #menu {
-    display: none;
     height: auto;
     padding: 40px 0 80px;
     width: 100%;
@@ -109,6 +108,10 @@ nav {
     }
 }
 
+.hidden {
+    display: none;
+}
+
 #nav-toggle {
     display: none;
 }
@@ -130,6 +133,10 @@ nav {
   position: absolute;
   display: block;
   content: '';
+  &:active {
+
+  background: $white;
+  }
 }
 
 #nav-toggle span:before {top: -10px}
