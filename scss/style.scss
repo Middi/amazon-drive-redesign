@@ -116,6 +116,11 @@ nav {
     }
 }
 
+#hamburger{
+    height: 36px;
+    width: 36px;
+}
+
 .hidden, #nav-toggle {display: none}
 
 #nav-toggle span {
@@ -405,7 +410,7 @@ footer {
     li {
         display: inline-block;
         padding:     6px 12px;
-        
+
         a {
             font-size: 0.7rem;
             opacity:      0.6;

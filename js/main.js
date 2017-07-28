@@ -4,7 +4,7 @@ $(document).ready(function () {
   // Contacts edit/delete bar reveal
   // ===========================
 
-  $('#nav-toggle').click(function () {
+  $('#hamburger').click(function () {
     if ($('#menu').hasClass('hidden')) {
          $('#menu').slideDown( "slow", function() {
             $('#menu').removeClass('hidden');
