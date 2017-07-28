@@ -42,7 +42,7 @@ input, select {
   -moz-appearance: none;
   appearance: none; }
 
-button:focus {
+a:focus, button:focus {
   outline: none; }
 
 /*=============================================

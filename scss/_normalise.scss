@@ -56,4 +56,4 @@ input, select {
     appearance:         none;
 }
 
-button:focus {outline: none}
+a:focus, button:focus {outline: none}
