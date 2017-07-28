@@ -127,9 +127,9 @@ header {
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   max-width: 1080px;
-  overflow: hidden; }
+  overflow: hidden;
+  justify-content: space-between; }
   .container-nav .logo {
     flex-grow: 2; }
     .container-nav .logo img {
@@ -162,14 +162,15 @@ nav {
     color: #3b434e;
     background-color: #ffac37; }
 
+/*----------  Mobile Nav  ----------*/
 #menu {
   height: auto;
-  padding: 30px 0 60px;
   width: 100%;
+  z-index: 2;
   position: absolute;
   background-color: #3b434e;
-  z-index: 2;
-  text-align: center; }
+  text-align: center;
+  padding: 30px 0 60px; }
   #menu ul {
     list-style-type: none; }
   #menu li {
@@ -184,16 +185,13 @@ nav {
       font-size: 1rem;
       margin: 0; }
 
-.hidden {
-  display: none; }
-
-#nav-toggle {
+.hidden, #nav-toggle {
   display: none; }
 
 #nav-toggle span {
-  position: absolute;
   right: 30px;
-  top: 34px; }
+  top: 34px;
+  position: absolute; }
 
 #nav-toggle span,
 #nav-toggle span:before,
@@ -282,11 +280,11 @@ button {
   height: auto;
   background-color: #eceae7; }
   #secure .container {
-    padding: 100px 30px 80px;
     background-image: url("../images/safe.png");
     background-position: top 110px right 40px;
     background-repeat: no-repeat;
-    background-size: 320px; }
+    background-size: 320px;
+    padding: 100px 30px 80px; }
   #secure .text-content {
     width: 60%; }
   #secure p {
@@ -360,8 +358,8 @@ footer {
   padding: 50px 0;
   height: auto;
   width: 100%;
-  background-color: #3b434e;
-  font-weight: 400; }
+  font-weight: 400;
+  background-color: #3b434e; }
   footer ul {
     list-style-type: none; }
   footer .container-footer {
@@ -369,17 +367,17 @@ footer {
     max-width: 1080px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start; }
+    align-items: flex-start;
+    justify-content: space-between; }
   footer .logo {
     margin: 0 auto; }
     footer .logo img {
       width: 150px;
       padding-top: 6px; }
   footer .footer-left {
+    flex: 1;
     padding: 6px 100px;
     opacity: 0.8;
-    flex: 1;
     margin: 0 auto; }
     footer .footer-left li {
       padding: 6px 0; }

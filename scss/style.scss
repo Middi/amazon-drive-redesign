@@ -32,14 +32,14 @@ header {
 }
 
 .container-nav {
-    height: 72px;
-    padding: 0 30px;
-    margin:  0 auto;
-    display:   flex;
+    height:        72px;
+    padding:     0 30px;
+    margin:      0 auto;
+    display:       flex;
     align-items: center;
+    max-width:   1080px;
+    overflow:    hidden;
     justify-content: space-between;
-    max-width: 1080px;
-    overflow: hidden;
 
     .logo {
         flex-grow: 2;
@@ -84,59 +84,59 @@ nav {
     }
 }
 
+
+/*----------  Mobile Nav  ----------*/
+
 #menu {
     height: auto;
-    padding: 30px 0 60px;
-    width: 100%;
-    position: absolute;
+    width:  100%;
+    z-index:   2; 
+    position:      absolute;
     background-color: $blue;
-    z-index: 2;
-    text-align: center;
+    text-align:      center;
+    padding:    30px 0 60px;
 
     ul {list-style-type: none}
 
-    li { padding: 10px 0;
+    li {
+        padding: 10px 0;
+
         a {font-size: 2rem}
+
         .login {
-            border: none;
+            border:      none;
             font-size: 1.4rem;
-            margin: 6px 0 0;
+            margin:   6px 0 0;
         }
-        .signup {font-size: 1rem;
-            margin: 0;
+
+        .signup {
+            font-size: 1rem;
+            margin:       0;
         }
     }
 }
 
-.hidden {
-    display: none;
-}
-
-#nav-toggle {
-    display: none;
-}
+.hidden, #nav-toggle {display: none}
 
 #nav-toggle span {
+    right:        30px;
+    top:          34px;
     position: absolute;
-    right: 30px;
-    top: 34px;
 }
 
 #nav-toggle span, 
 #nav-toggle span:before,
 #nav-toggle span:after {
-  cursor: pointer;
-  border-radius: 1px;
-  height: 3px;
-  width: 35px;
+  cursor:     pointer;
+  border-radius:  1px;
+  height:         3px;
+  width:         35px;
   background: $orange;
-  position: absolute;
-  display: block;
-  content: '';
-  &:active {
+  position:  absolute;
+  display:      block;
+  content:         '';
 
-  background: $white;
-  }
+  &:active {background: $white}
 }
 
 #nav-toggle span:before {top: -10px}
@@ -169,7 +169,7 @@ button {
     font-size:    0.8rem;
     border-radius:  50px;
     padding:   16px 52px;
-    margin: 32px 0 20px;
+    margin:  32px 0 20px;
     transition: all 0.4s;
     border: 2px solid $dark-blue;
 
@@ -188,12 +188,12 @@ button {
 =============================================*/
 
 #jumbotron {
-    height: auto;
+    height:    auto;
     padding: 80px 0;
 
     ul {
         font-size:  0.8rem;
-        padding: 18px;
+        padding:      18px;
     }
 
     li {padding-bottom: 8px}
@@ -201,10 +201,7 @@ button {
     button {
         color:  $white;
         background-color: $bright-blue;
-
-        &:hover {
-            background-color: desaturate(darken($bright-blue, 10), 40);
-        }
+        &:hover {background-color: desaturate(darken($bright-blue, 10), 40)}
     }
 }
 
@@ -212,12 +209,12 @@ button {
 #hero-image  {
     top:     72px;
     left:     49%;
-    width:  50%;
+    width:    50%;
     height: 600px;
     position: absolute;
     background-image: url('../images/hero-image.png');
-    background-repeat: no-repeat; 
-    background-size:      contain;
+    background-repeat:      no-repeat; 
+    background-size:          contain;
     background-position: top left 10%;
 }
 
@@ -234,11 +231,11 @@ button {
     background-color: $white-back;
 
     .container {
-        padding: 100px 30px 80px;
         background-image: url('../images/safe.png');
-        background-position:  top 110px right 40px;
+        background-position:   top 110px right 40px;
         background-repeat: no-repeat;
         background-size:       320px;
+        padding:     100px 30px 80px;
     }
 
     .text-content {width: 60%}
@@ -261,7 +258,7 @@ button {
     .container {
         padding: 80px 30px;
         background-image: url('../images/drive.png');
-        background-position:      top 40px left -20px;
+        background-position:     top 40px left -20px;
         background-repeat: no-repeat;
         background-size:       440px;
     }
@@ -289,7 +286,7 @@ button {
     .container {
         padding: 100px 30px;
         background-image: url('../images/download.png');
-        background-position:       top 50px right 40px;
+        background-position:        top 50px right 40px;
         background-repeat: no-repeat;
         background-size:       310px;
     }
@@ -318,7 +315,7 @@ button {
 =============================================*/
 
 #trial {
-    height: auto;
+    height:    auto;
     padding: 60px 0;
     background-color: $bright-blue;
 
@@ -345,25 +342,24 @@ button {
 =============================================*/
 
 footer {
-    padding: 50px 0;
-    height:   auto;
-    width:     100%;
-    background-color: $blue;
+    padding:  50px 0;
+    height:     auto;
+    width:      100%;
     font-weight: 400;
+    background-color: $blue;
 
     ul {list-style-type: none}
 
     .container-footer { 
-        padding: 0 30px;
+        padding:   0 30px;
         max-width: 1080px;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
+        margin:    0 auto;
+        display:     flex;
         align-items: flex-start;
+        justify-content: space-between;
     }
 
     .logo {
-        
         margin: 0 auto;
         img {
             width:     150px;
@@ -372,10 +368,10 @@ footer {
     }
 
     .footer-left {
-        padding: 6px 100px;
-        opacity: 0.8;
         flex: 1;
-        margin: 0 auto;
+        padding: 6px 100px;
+        opacity:       0.8;
+        margin:     0 auto;
 
         li {
             padding: 6px 0;
@@ -386,21 +382,20 @@ footer {
 
     .footer-right {
         font-size: 0.8rem;
-        display: flex;
-        margin: 0 auto;
+        display:     flex;
+        margin:    0 auto;
+
         .right-1, .right-2 {
             padding: 0 0 0 72px;
-            li {
-                padding: 6px 0;
-            }
+            li {padding: 6px 0}
         }
     }
 }
 
 
 .copyright {
-    height:  auto;
-    width:   100%;
+    height:    auto;
+    width:     100%;
     padding: 10px 0;
     background-color: $dark-blue;
 
@@ -409,10 +404,11 @@ footer {
 
     li {
         display: inline-block;
-        padding: 6px 12px;
+        padding:     6px 12px;
+        
         a {
             font-size: 0.7rem;
-            opacity: 0.6;
+            opacity:      0.6;
         }   
     }
 }
