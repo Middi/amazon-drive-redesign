@@ -395,8 +395,9 @@ footer {
 
 
 .copyright {
-    height:  40px;
+    height:  auto;
     width:   100%;
+    padding: 10px 0;
     background-color: $dark-blue;
 
     
@@ -404,7 +405,7 @@ footer {
 
     li {
         display: inline-block;
-        padding:       0 12px;
+        padding: 6px 12px;
         a {
             font-size: 0.7rem;
             opacity: 0.6;
