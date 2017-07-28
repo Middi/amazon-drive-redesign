@@ -109,6 +109,7 @@ button {
     font-size:    0.8rem;
     border-radius:  50px;
     padding:   16px 52px;
+    margin: 32px 0 20px;
     transition: all 0.4s;
     border: 2px solid $dark-blue;
 
@@ -178,7 +179,7 @@ button {
     .container {
         padding: 100px 30px;
         background-image: url('../images/safe.png');
-        background-position:  top 110px right 100px;
+        background-position:  top 110px right 40px;
         background-repeat: no-repeat;
         background-size:       320px;
     }
@@ -203,7 +204,7 @@ button {
     .container {
         padding: 100px 30px;
         background-image: url('../images/drive.png');
-        background-position:      top 40px left 10px;
+        background-position:      top 40px left -20px;
         background-repeat: no-repeat;
         background-size:       440px;
     }
@@ -231,7 +232,7 @@ button {
     .container {
         padding: 100px 30px;
         background-image: url('../images/download.png');
-        background-position:       top 50px right 120px;
+        background-position:       top 50px right 40px;
         background-repeat: no-repeat;
         background-size:       310px;
     }
@@ -288,7 +289,7 @@ button {
 
 footer {
     padding: 50px 0;
-    height:   280px;
+    height:   auto;
     width:     100%;
     background-color: $blue;
     font-weight: 400;
@@ -304,15 +305,20 @@ footer {
         align-items: flex-start;
     }
 
-    .logo img {
-        width:     150px;
-        padding-top: 6px;
+    .logo {
+        
+        margin: 0 auto;
+        img {
+            width:     150px;
+            padding-top: 6px;
+        }
     }
 
     .footer-left {
         padding: 6px 100px;
         opacity: 0.8;
         flex: 1;
+        margin: 0 auto;
 
         li {
             padding: 6px 0;
@@ -324,6 +330,7 @@ footer {
     .footer-right {
         font-size: 0.8rem;
         display: flex;
+        margin: 0 auto;
         .right-1, .right-2 {
             padding: 0 0 0 72px;
             li {

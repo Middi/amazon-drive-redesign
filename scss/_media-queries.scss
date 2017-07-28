@@ -22,6 +22,8 @@
         .text-content {width: 100%}
     }
 
+    #secure p {padding-right: 40px}
+    
     #trial {
         text-align: center;
         .container{
@@ -30,5 +32,25 @@
         }
         .text-content {width: 100%}
     }
+
+    .container-footer {flex-direction: column}
+
+    .footer-left ul {
+        text-align: center;
+        li {
+            display: inline-block;
+            padding: 6px;
+            a {font-size: 0.7rem}
+        }
+    } 
+
+    .footer-right > .right-1, .right-2 {display: none}
+    
+    .copyright .container {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+
 
 }
