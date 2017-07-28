@@ -128,7 +128,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1080px; }
+  max-width: 1080px;
+  overflow: hidden; }
   .container-nav .logo {
     flex-grow: 2; }
     .container-nav .logo img {
@@ -160,6 +161,55 @@ nav {
   .signup:hover {
     color: #3b434e;
     background-color: #ffac37; }
+
+#menu {
+  display: none;
+  height: auto;
+  padding: 40px 0 80px;
+  width: 100%;
+  position: absolute;
+  background-color: #3b434e;
+  z-index: 2;
+  text-align: center; }
+  #menu ul {
+    list-style-type: none; }
+  #menu li {
+    padding: 10px 0; }
+    #menu li a {
+      font-size: 2rem; }
+    #menu li .login {
+      border: none;
+      font-size: 1.4rem;
+      margin: 6px 0 0; }
+    #menu li .signup {
+      font-size: 1rem;
+      margin: 0; }
+
+#nav-toggle {
+  display: none; }
+
+#nav-toggle span {
+  position: absolute;
+  right: 30px;
+  top: 34px; }
+
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 3px;
+  width: 35px;
+  background: #ffac37;
+  position: absolute;
+  display: block;
+  content: ''; }
+
+#nav-toggle span:before {
+  top: -10px; }
+
+#nav-toggle span:after {
+  bottom: -10px; }
 
 /*=====  End of Header / Nav  ======*/
 /*=============================================
@@ -358,6 +408,10 @@ footer {
 @media only screen and (max-width: 880px) {
   nav, .user {
     display: none; }
+  #nav-toggle {
+    display: block; }
+  #menu {
+    display: block; }
   h1 {
     font-size: 2.7rem;
     line-height: 3rem;
