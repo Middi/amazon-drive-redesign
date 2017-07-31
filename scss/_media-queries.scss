@@ -1,13 +1,5 @@
 
-/*----------  Break Point 1 - 1224px  ----------*/
-
-@media only screen and (max-width: 1224px) {
-
-    #hero-image  {background-size: cover}
-}
-
-
-/*----------  Break Point 2 - 880px  ----------*/
+/*----------  Break Point 1 - 880px  ----------*/
 
 @media only screen and (max-width: 880px) {
     
@@ -28,8 +20,29 @@
         .text-content {width: 100%}
     }
 
+    #jumbotron {
+        background-image: url('../images/hero-mobile.png');
+        background-position: top 120px right -60px;
+        background-repeat: no-repeat; 
+        background-size:       430px;
+        .text-content {width: 70%}
+    }
+
     #secure p {padding-right: 40px}
-    
+
+    #apps {
+        background-image: url('../images/app-mobile.png');
+        background-position:     top 140px right 30px;
+        background-repeat: no-repeat; 
+        background-size:       280px;
+        .container {padding: 40px 30px}
+        .text-content {
+            width: 70%;
+            p {padding-right: 120px}
+        }
+        .text-right {justify-content: flex-start}
+    }
+
     #trial {
         text-align: center;
         .text-content {width: 100%}
@@ -60,6 +73,14 @@
 }
 
 
+/*----------  Break Point 2 - 740px  ----------*/
+
+@media only screen and (max-width: 740px) {
+
+    #jumbotron {background-position: top 140px right -160px}
+
+}
+
 /*----------  Break Point 3 - 600px  ----------*/
 
 @media only screen and (max-width: 600px) {
@@ -70,11 +91,9 @@
     }
 
     #jumbotron {
-        padding: 40px 0 60px 0;
-        background-image: url('../images/safe.png');
-        background-position: top 100px right -160px;
-        background-repeat: no-repeat; 
-        background-size:       330px;
+        padding: 100px 0 80px 0;
+        background-position: top 160px right -230px;
+        .text-content {width: 100%}
         ul {padding: 18px 135px 10px 18px}
         button {margin: 30px auto}
     }
@@ -82,19 +101,28 @@
     #secure, #download {
         text-align: center;
         .container {padding: 40px 30px}
-        .text-content {width: 100%}
         p {padding-right: 0px}
         button {margin: 30px auto}
     }
 
     #apps {
-        background-image: url('../images/download.png');
-        background-position:     top 140px right -130px;
-        background-repeat: no-repeat; 
-        background-size:       280px;
-        .container {padding: 40px 30px}
-        .text-content p {padding-right: 120px}
-        button {margin: 70px auto 30px}
+        background-image: url('../images/app-mobile.png');
+        background-position:     top 130px right -100px;
+        
+        .text-content {
+            width: 100%;
+            p {padding-right: 150px}
+        }
     }
+
+}
+
+/*----------  Break Point 4 - 440px  ----------*/
+
+@media only screen and (max-width: 440px) {
+
+    #apps {background-position: top 200px right -100px;
+         button {margin: 70px auto 30px}
+        }
 
 }

@@ -58,7 +58,7 @@ a:focus, button:focus {
 h1 {
   color: #fcfcfc;
   font-weight: 300;
-  font-size: 3rem;
+  font-size: 3.2rem;
   line-height: 3.3rem; }
 
 .dark {
@@ -114,10 +114,12 @@ body {
 header {
   width: 100%;
   height: 72px;
-  background-color: #3b434e; }
+  background-color: #3b434e;
+  position: absolute;
+  z-index: 20; }
 
 .container {
-  width: 1080px;
+  width: 1000px;
   padding: 0 30px;
   margin: 0 auto;
   display: flex;
@@ -256,7 +258,7 @@ button {
 =============================================*/
 #jumbotron {
   height: auto;
-  padding: 80px 0; }
+  padding: 140px 0 80px 0; }
   #jumbotron ul {
     font-size: 0.8rem;
     padding: 18px; }
@@ -264,13 +266,14 @@ button {
     padding-bottom: 8px; }
   #jumbotron button {
     color: #fcfcfc;
-    background-color: #4095f6; }
+    background-color: #4095f6;
+    border: none; }
     #jumbotron button:hover {
       background-color: #417dc2; }
 
 #hero-image {
-  top: 72px;
-  left: 49%;
+  top: 50px;
+  left: 50%;
   width: 50%;
   height: 600px;
   position: absolute;
@@ -288,12 +291,11 @@ button {
   background-color: #eceae7; }
   #secure .container {
     background-image: url("../images/safe.png");
-    background-position: top 110px right 40px;
+    background-position: top 100px right 10%;
     background-repeat: no-repeat;
-    background-size: 320px;
     padding: 100px 30px 80px; }
   #secure .text-content {
-    width: 60%; }
+    width: 65%; }
   #secure p {
     padding-right: 170px; }
 
@@ -307,14 +309,13 @@ button {
   #apps .container {
     padding: 80px 30px;
     background-image: url("../images/drive.png");
-    background-position: top 40px left -20px;
-    background-repeat: no-repeat;
-    background-size: 440px; }
+    background-position: top 50px left 10%;
+    background-repeat: no-repeat; }
   #apps .text-right {
     display: flex;
     justify-content: flex-end; }
   #apps .text-content {
-    width: 50%; }
+    width: 51%; }
 
 /*=====  End of App Section  ======*/
 /*=============================================
@@ -326,9 +327,8 @@ button {
   #download .container {
     padding: 100px 30px;
     background-image: url("../images/download.png");
-    background-position: top 50px right 40px;
-    background-repeat: no-repeat;
-    background-size: 310px; }
+    background-position: top 50px right 10%;
+    background-repeat: no-repeat; }
   #download .text-content {
     width: 50%; }
   #download p {
@@ -414,12 +414,7 @@ footer {
       opacity: 0.6; }
 
 /*=====  End of Footer Section  ======*/
-/*----------  Break Point 1 - 1224px  ----------*/
-@media only screen and (max-width: 1224px) {
-  #hero-image {
-    background-size: cover; } }
-
-/*----------  Break Point 2 - 880px  ----------*/
+/*----------  Break Point 1 - 880px  ----------*/
 @media only screen and (max-width: 880px) {
   nav, .user {
     display: none; }
@@ -435,8 +430,28 @@ footer {
     background-image: none; }
   #jumbotron .text-content, #secure .text-content, #apps .text-content, #download .text-content {
     width: 100%; }
+  #jumbotron {
+    background-image: url("../images/hero-mobile.png");
+    background-position: top 120px right -60px;
+    background-repeat: no-repeat;
+    background-size: 430px; }
+    #jumbotron .text-content {
+      width: 70%; }
   #secure p {
     padding-right: 40px; }
+  #apps {
+    background-image: url("../images/app-mobile.png");
+    background-position: top 140px right 30px;
+    background-repeat: no-repeat;
+    background-size: 280px; }
+    #apps .container {
+      padding: 40px 30px; }
+    #apps .text-content {
+      width: 70%; }
+      #apps .text-content p {
+        padding-right: 120px; }
+    #apps .text-right {
+      justify-content: flex-start; }
   #trial {
     text-align: center; }
     #trial .text-content {
@@ -460,17 +475,21 @@ footer {
     margin: 0 auto;
     text-align: center; } }
 
+/*----------  Break Point 2 - 740px  ----------*/
+@media only screen and (max-width: 740px) {
+  #jumbotron {
+    background-position: top 140px right -160px; } }
+
 /*----------  Break Point 3 - 600px  ----------*/
 @media only screen and (max-width: 600px) {
   h2 {
     font-size: 1rem;
     padding: 0 90px 10px 0; }
   #jumbotron {
-    padding: 40px 0 60px 0;
-    background-image: url("../images/safe.png");
-    background-position: top 100px right -160px;
-    background-repeat: no-repeat;
-    background-size: 330px; }
+    padding: 100px 0 80px 0;
+    background-position: top 160px right -230px; }
+    #jumbotron .text-content {
+      width: 100%; }
     #jumbotron ul {
       padding: 18px 135px 10px 18px; }
     #jumbotron button {
@@ -479,20 +498,21 @@ footer {
     text-align: center; }
     #secure .container, #download .container {
       padding: 40px 30px; }
-    #secure .text-content, #download .text-content {
-      width: 100%; }
     #secure p, #download p {
       padding-right: 0px; }
     #secure button, #download button {
       margin: 30px auto; }
   #apps {
-    background-image: url("../images/download.png");
-    background-position: top 140px right -130px;
-    background-repeat: no-repeat;
-    background-size: 280px; }
-    #apps .container {
-      padding: 40px 30px; }
-    #apps .text-content p {
-      padding-right: 120px; }
+    background-image: url("../images/app-mobile.png");
+    background-position: top 130px right -100px; }
+    #apps .text-content {
+      width: 100%; }
+      #apps .text-content p {
+        padding-right: 150px; } }
+
+/*----------  Break Point 4 - 440px  ----------*/
+@media only screen and (max-width: 440px) {
+  #apps {
+    background-position: top 200px right -100px; }
     #apps button {
       margin: 70px auto 30px; } }

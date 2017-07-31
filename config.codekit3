@@ -19,14 +19,31 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"\/images\/AMAZON-DRIVE-IMAGES.psd": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/images\/AMAZON-DRIVE-IMAGES.psd",
+		"oF": 0
+		},
+	"\/images\/app-mobile.png": {
+		"ft": 32768,
+		"iS": 24426,
+		"oA": 0,
+		"oAP": "\/images\/app-mobile.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"\/images\/download.png": {
 		"ft": 32768,
 		"iS": 68345,
 		"oA": 0,
 		"oAP": "\/images\/download.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -36,8 +53,8 @@
 		"oA": 0,
 		"oAP": "\/images\/drive.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -46,6 +63,17 @@
 		"iS": 195719,
 		"oA": 0,
 		"oAP": "\/images\/hero-image.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/images\/hero-mobile.png": {
+		"ft": 32768,
+		"iS": 49593,
+		"oA": 0,
+		"oAP": "\/images\/hero-mobile.png",
 		"oF": 0,
 		"oIPL": 1,
 		"opt": 1,
