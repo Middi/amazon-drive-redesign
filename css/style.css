@@ -266,8 +266,8 @@ button {
     padding-bottom: 8px; }
   #jumbotron button {
     color: #fcfcfc;
-    background-color: #4095f6;
-    border: none; }
+    border: none;
+    background-color: #4095f6; }
     #jumbotron button:hover {
       background-color: #417dc2; }
 
@@ -486,7 +486,7 @@ footer {
     font-size: 1rem;
     padding: 0 90px 10px 0; }
   #jumbotron {
-    padding: 100px 0 80px 0;
+    padding: 100px 0 80px;
     background-position: top 160px right -230px; }
     #jumbotron .text-content {
       width: 100%; }

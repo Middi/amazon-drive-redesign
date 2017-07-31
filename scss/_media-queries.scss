@@ -32,7 +32,7 @@
 
     #apps {
         background-image: url('../images/app-mobile.png');
-        background-position:     top 140px right 30px;
+        background-position: top 140px right 30px;
         background-repeat: no-repeat; 
         background-size:       280px;
         .container {padding: 40px 30px}
@@ -91,7 +91,7 @@
     }
 
     #jumbotron {
-        padding: 100px 0 80px 0;
+        padding: 100px 0 80px;
         background-position: top 160px right -230px;
         .text-content {width: 100%}
         ul {padding: 18px 135px 10px 18px}
@@ -107,15 +107,15 @@
 
     #apps {
         background-image: url('../images/app-mobile.png');
-        background-position:     top 130px right -100px;
+        background-position:       top 130px right -100px;
         
         .text-content {
             width: 100%;
             p {padding-right: 150px}
         }
     }
-
 }
+
 
 /*----------  Break Point 4 - 440px  ----------*/
 
@@ -124,5 +124,4 @@
     #apps {background-position: top 200px right -100px;
          button {margin: 70px auto 30px}
         }
-
 }
