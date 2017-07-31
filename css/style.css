@@ -58,8 +58,8 @@ a:focus, button:focus {
 h1 {
   color: #fcfcfc;
   font-weight: 300;
-  font-size: 3.2rem;
-  line-height: 3.3rem; }
+  font-size: 3rem;
+  line-height: 3rem; }
 
 .dark {
   color: #30363f; }
@@ -276,7 +276,7 @@ button {
       background-color: #417dc2; }
 
 #hero-image {
-  top: 70px;
+  top: 40px;
   left: 50%;
   width: 50%;
   height: 600px;
